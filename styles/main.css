@@ -110,10 +110,13 @@ body{
 .fore, #command {
     display: inline-block;
     margin: 0;
+    padding: 0;
 }
 
+
 .response {
-    margin-left: 155px;
+    margin-left: 145px;
+    padding: 0;
 }
 
 pre { 
@@ -155,13 +158,13 @@ pre {
 
 #command {
     color:#18bc51;
-    font-weight: bold; 
-    font-size: 12px; 
     background-color: #222220; 
     width: 35%;
     border: none;
-    padding: 7px;
+    font-size: 1em;
+   /* padding: 7px;*/
     outline: none;
+    line-height: 1.9em
 }
 
 
