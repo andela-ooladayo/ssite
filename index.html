@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Codedoctor</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/typed.js/js/typed.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <button class='show' style="display:none"> show The Terminal </button>
+        <div class='window'>
+            <div class='header'>
+                <a href="#" class='prp close' enabled ></a>
+                <a href="#" class='prp min'></a>
+                <a href="#" class='prp max'></a>  
+                <a href="#" class='maxer'>&#8660;</a>
+                <span>Terminal - Bash - 50x30</span>
+            </div>
+            <pre id="Tbd">
+                Login @ : <span id="date">Date.now()</span> on Codedoctor
+                Welcome to Shadownet Terminal!
+                CD.io'App:~/usr $ Oladayo
+                <div id="Cmd"></div>
+                <span class="element"></span>
+                <div class="fore"> CMD</span>:<span class="accent">~</div> : <input id="command" type="text" maxlength="50"></input>
+                <div class="response"></div>
+            </pre>
+        </div>
+    </body>
+</html>
