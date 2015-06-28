@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 html{
-  height:100%; 
+  height:100%;
 }
 body{
   background: white;
@@ -41,7 +41,7 @@ body{
 .min{
     background: #f5bf67;
     box-shadow: 0px 1px 5px #876212 inset,0px 1px 0px rgba(255,255,255,0.5);
-} 
+}
 .max{
     background: #a3db82;
     box-shadow: 0px 1px 5px #5a6e49 inset,0px 1px 0px rgba(255,255,255,0.5);
@@ -62,7 +62,7 @@ body{
     margin-top: 0px;
     width: 1000px;
   /*float:left;*/
-    
+
 }
 
 .win{
@@ -116,19 +116,19 @@ body{
     margin-left: 155px;
 }
 
-pre { 
+pre {
     padding:10px;  margin:0px;
     margin-top: 0px;
     width: 980px;
     position:relative; top:-5px; left:-5px;
     border:1px solid #888;
-    background: #222220; 
+    background: #222220;
     border-radius: 0px 0px 5px 5px;
     min-height: 20px;
     max-height: 300px;
     overflow:auto;
     color:#18bc51;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.3); 
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
 
 .typed-cursor{
@@ -155,13 +155,69 @@ pre {
 
 #command {
     color:#18bc51;
-    font-weight: bold; 
-    font-size: 12px; 
-    background-color: #222220; 
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #222220;
     width: 35%;
     border: none;
     padding: 7px;
     outline: none;
+}
+
+
+
+
+/* CSS */
+
+header {
+/*   position: fixed; */
+/* 	z-index: 400; */
+}
+
+#logo-name {
+  font-weight: normal;
+  color: #fff;
+}
+
+.header-logo {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.header-logo div {
+  display: inline-block;
+}
+
+.header-logo-image img {
+  width: 50px;
+  height: 40px;
+}
+
+.header-logo-image {
+  vertical-allign: middle !important;
+}
+
+
+.navbar-default {
+  background: #1E1E1E !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #1DB0ED !important;
+}
+
+#nav-header {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.link{
+  cursor: pointer;
+  color: #999999 !important;
+}
+
+.link:hover {
+  color:  #1DB0ED !important;
 }
 
 
