@@ -1,46 +1,21 @@
 
+// This is a product of shadownet incoporation
+$(document).ready(function() {
+    // set date
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+    if(dd < 10) {
+        dd = '0'+ dd
+    } 
+    if(mm < 10) {
+        mm='0' + mm
+    } 
+    today = mm+'/'+dd+'/'+yyyy;
 
-// var greeting = "Searching The Programme .... <br>", 
-//     cursor2 = '<span class="fore"> CMD</span>:<span class="accent">~</span> : "',
-//     cursor =  '<span id="cmd"> </span>',
-//     cmd = $('#Cmd:last-child');
+    $("#date").text(today)
 
-// function type(el,text,pos,no){
-//     ctext = text.substring(0,pos)+(pos%2?cursor:cursor);
-//     $(el).html(ctext);
-//     if(pos==text.length){
-//         $(el).html(text+cursor);
-//     }else{
-//         window.setTimeout('type("'+el+'","'+text+'",'+(pos+1)+','+1+');',70);
-//     }
-// }
-// var rt = 0 ,rtj = 0 ;
-// function robot () {
-//   if(rtj>5){rtj=0;}
-//  var greeting = "executing  The Programme .... <br>", 
-//     cursor2 = '<span class="fore"> CMD</span>:<span class="accent">~</span> : "',
-//     cursor =  '<span id="cmd'+rt+'"> </span>',
-//     cmd = $('#Cmd'); 
-//   var greeting2 = ["executing  The Programme .... <br>",
-//                   "Matching result .... <br>",
-//                   "Calculing variables  .... <br>",
-//                   "System calling  .... <br>",
-//                   "Saving The feedback ... <br>",
-//                   "Reloading the programme ... <br><br>",
-//                   ] ;
-//   cmd.append(cursor2);
-//   cmd.append(cursor);
-//   type('#cmd'+rt,greeting2[rtj],0);
-//   rt++;rtj++;
-  
-//   var elem = document.getElementById('Tbd');
-//   elem.scrollTop = elem.scrollHeight;
-  
-// }
-
-
-$(document).ready(function(){
-  // setInterval(robot,3000);
     $('.close').click( function () { 
         $('.window').slideUp();
         $('.show').fadeIn();
@@ -73,21 +48,8 @@ $(document).ready(function(){
     $('.max').click( function () { 
         $('pre').slideDown();
     });
-
-    $('#command').on('keypress', function (e) {
-        if(e.which == 13) {
-            var command = $("#command").val().toString();
-            console.log(command)
-            if(command === "codedoctor -h" || command === "codedoctor --help") {
-                console.log("Enter")
-                $(".response").typed({
-                    strings: ["These are the commands available<br> codedoctor who >>> Tells you who is codedoctor<br> codedoctor schedule >>> Shows codedoctor schedule<br> codedoctor hacks >>> Magics performed by codedoctor<br> codedoctor academics >>> academic qualification of codedoctor"],
-                    typeSpeed: 0,
-                    showCursor: false,
-                });
-            }  
-        }
-    });
+    var commandor = '#command';
+    onEnter(commandor)
  
 });
 
@@ -99,10 +61,55 @@ $(function(){
     });
 });
 
-function typeo() {
-    $(".response").typed({
-        strings: [],
+function typeo(ele, message, speed, command, run) {
+    $(ele).typed({
+        strings: [message],
         typeSpeed: 0,
         showCursor: false,
+        callback: function() {
+            $(".response").append("<div class='fore' style='margin-left:-10px; margin-top:10px'>CMD</span>:<span class='accent'>~</div>: <input style='color:#18bc51;background-color: #222220; width: 35%; border: none; line-height: 1.9em; font-size: 1em; outline: none;' id=" + "'" + command + run + "'" + "type='text' maxlength='50'></input>")
+            var commandor = "#" + command + run
+            $(commandor).focus();
+            onEnter(commandor)
+        },
+    });
+}
+
+var run = 0;
+var cmd = null;
+
+function onEnter(commandor) {
+    $(commandor).on('keypress', function (e) {
+        if(e.which == 13) {
+            var command = $(commandor).val().toString().toLowerCase();
+            var cla = "attach-" + run;
+            var element = $("<div class=" + cla + ">" + "</div>")
+            $(".response").append(element)
+            if(command === "codedoctor -h" || command === "codedoctor --help") {
+                message = "These are the commands available<br> codedoctor who >>> Tells you who is codedoctor<br> codedoctor schedule >>> Shows codedoctor schedule<br> codedoctor hacks >>> Magics performed by codedoctor<br> codedoctor academics >>> academic qualification of codedoctor\n"
+                typeo("." + cla, message, 0, 'command-', run)
+            }
+            else if(command === "codedoctor -w" || command === "codedoctor who") {
+                message = "Oladayo is a Software Engineer\n"
+                typeo("." + cla, message, 0, 'command-', run)
+            }
+            else if(command === "codedoctor -s" || command === "codedoctor schedule") {
+                message = "My schedule ......................................\n"
+                typeo("." + cla, message, 0, 'command-', run)
+            }
+            else if(command === "codedoctor -h" || command === "codedoctor hacks"){
+                message = "unhacked a website for a travel tour company\n"
+                typeo("." + cla, message, 0, 'command-', run)
+            }
+            else if(command === "codedoctor -a" || command === "codedoctor academics"){
+                message = "Attended Ladoke Akintola University of Technology...\n"
+                typeo("." + cla, message, 0, 'command-', run)
+            }
+            else {
+                message = "Unknown command/option " + command.replace("codedoctor", "") + " .Try again" 
+                typeo("." + cla, message, 0, 'command-', run)
+            }
+            run = run + 1
+        }
     });
 }
