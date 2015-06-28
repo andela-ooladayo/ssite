@@ -136,21 +136,21 @@ pre {
 
 .typed-cursor{
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    -webkit-animation: b 0.7s infinite;
+    -moz-animation: b 0.7s infinite;
+    animation: b 0.7s infinite;
 }
-@keyframes blink{
+@keyframes b{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
-@-webkit-keyframes blink{
+@-webkit-keyframes b{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
-@-moz-keyframes blink{
+@-moz-keyframes b{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -175,20 +175,13 @@ pre {
 
 /* CSS */
 
-header {
-/*   position: fixed; */
-/* 	z-index: 400; */
-}
-
 .bash, .window{
-/*   height: 200px; */
   background-color: #D1D1D1;
 }
 
-
 #logo-name {
   font-weight: normal;
-  color: #fff;
+  color: #999999;
 }
 
 .header-logo {
@@ -202,16 +195,11 @@ header {
 
 .header-logo-image img {
   width: 50px;
-  height: 40px;
 }
-
-/* .header-logo-image {
-  vertical-allign: middle !important;
-} */
 
 
 .navbar-default {
-  background: #1E1E1E !important;
+   background: #fff !important; 
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -219,20 +207,84 @@ header {
 }
 
 #nav-header {
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
-.link{
+#nav-header ul {
+	margin-top: 10px;
+} 
+
+.menu {
+	border-bottom-color: ##999999;
+}
+
+/*.link{
   cursor: pointer;
   color: #999999 !important;
-}
+}*/
 
-.link:hover {
+/*.link:hover {
   color:  #1DB0ED !important;
+}*/
+
+.link {
+	margin-right: 10px !important;
+	border-color: transparent !important;
+	background-color: transparent !important;
 }
 
-.selected {
-  color: #1DB0ED !important;
+.link:hover, .selected {
+  background-color: #1DB0ED !important;
+	color: #ffffff !important;
 }
 
+.welcome {
+  position: relative;
+  height: 620px;
+/*   background: url(../images/the-coder.jpg) no-repeat  rgba(27, 166 , 223, 100);  */
+/*   background-size: cover; */
+/*   background-color: rgba(27, 166 , 223, 100); */
+}
+
+.welcome img{
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  display: block;
+  background: rgba(27, 166 , 223, 0.7);
+  text-allign: center;
+}
+
+/* .overlay img {
+  width: 100px !important;
+  height: 100px !important;
+} */
+
+
+.welcome-logo {
+	text-align: center;
+ /* width: 100px !important;
+  height: 100px !important;*/
+}
+
+.welcome-logo img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+
+.welcome-logo span{
+	margin-top: 20px;
+	font-size: 4em;
+	font-weight: bold;
+}
