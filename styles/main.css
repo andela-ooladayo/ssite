@@ -174,6 +174,12 @@ header {
 /* 	z-index: 400; */
 }
 
+.bash, .window{
+/*   height: 200px; */
+  background-color: #D1D1D1;
+}
+
+
 #logo-name {
   font-weight: normal;
   color: #fff;
@@ -193,9 +199,9 @@ header {
   height: 40px;
 }
 
-.header-logo-image {
+/* .header-logo-image {
   vertical-allign: middle !important;
-}
+} */
 
 
 .navbar-default {
@@ -220,5 +226,7 @@ header {
   color:  #1DB0ED !important;
 }
 
-
+.selected {
+  color: #1DB0ED !important;
+}
 
