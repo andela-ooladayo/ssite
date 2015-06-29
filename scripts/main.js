@@ -8,27 +8,30 @@ $(document).ready(function() {
     var yyyy = today.getFullYear();
     if(dd < 10) {
         dd = '0'+ dd
-    } 
+    }
     if(mm < 10) {
         mm='0' + mm
-    } 
+    }
     today = mm+'/'+dd+'/'+yyyy;
 
     $("#date").text(today)
+    $('.welcome').hide();
 
-    $('.close').click( function () { 
+    $('.close').click( function () {
         $('.window').slideUp();
         $('.show').fadeIn();
+        $('.welcome').slideDown();
     });
 
-    $('.show').click( function () { 
+    $('.show').click( function () {
         $('.window').slideDown();
         $('.show').fadeOut();
+        $('.welcome').hide();
     });
 
     var maxer = 0 ;
-    $('.maxer').click( function () { 
-        if(maxer%2 === 0) {  
+    $('.maxer').click( function () {
+        if(maxer%2 === 0) {
             $('.window').animate({width:"100%", height:"800px"});
             $('#Tbd').animate({width:"99%", height:"800px"});
         }
@@ -41,17 +44,18 @@ $(document).ready(function() {
 
     $("#command").focus();
 
-    $('.min').click( function () { 
+    $('.min').click( function () {
         $('pre').slideUp();
     });
 
-    $('.max').click( function () { 
+    $('.max').click( function () {
         $('pre').slideDown();
     });
     var commandor = '#command';
     onEnter(commandor)
- 
 });
+
+
 
 $(function(){
     $(".element").typed({
@@ -106,10 +110,64 @@ function onEnter(commandor) {
                 typeo("." + cla, message, 0, 'command-', run)
             }
             else {
-                message = "Unknown command/option " + command.replace("codedoctor", "") + " .Try again" 
+                message = "Unknown command/option " + command.replace("codedoctor", "") + " .Try again"
                 typeo("." + cla, message, 0, 'command-', run)
             }
             run = run + 1
         }
     });
 }
+
+
+
+
+
+
+//
+//
+// var animationDelay = 2500;
+//
+// animateHeadline($('.cd-headline'));
+//
+// function animateHeadline($headlines) {
+// 	$headlines.each(function(){
+// 		var headline = $(this);
+// 		//trigger animation
+// 		setTimeout(function(){ hideWord( headline.find('.is-visible') ) }, animationDelay);
+// 		//other checks here ...
+// 	});
+// }
+//
+//
+// ion hideWord($word) {
+// 	var nextWord = takeNext($word);
+// 	switchWord($word, nextWord);
+// 	setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+// }
+//
+// function takeNext($word) {
+// 	return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+// }
+//
+// function switchWord($oldWord, $newWord) {
+// 	$oldWord.removeClass('is-visible').addClass('is-hidden');
+// 	$newWord.removeClass('is-hidden').addClass('is-visible');
+// }
+//
+//
+//
+//
+// singleLetters($('.cd-headline.letters').find('b'));
+//
+// function singleLetters($words) {
+// 	$words.each(function(){
+// 		var word = $(this),
+// 			letters = word.text().split(''),
+// 			selected = word.hasClass('is-visible');
+// 		for (i in letters) {
+// 			letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
+// 		}
+// 	    var newLetters = letters.join('');
+// 	    word.html(newLetters);
+// 	});
+// }

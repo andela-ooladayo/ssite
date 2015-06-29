@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 html{
-  height:100%; 
+  height:100%;
 }
 body{
   background: white;
@@ -41,7 +41,7 @@ body{
 .min{
     background: #f5bf67;
     box-shadow: 0px 1px 5px #876212 inset,0px 1px 0px rgba(255,255,255,0.5);
-} 
+}
 .max{
     background: #a3db82;
     box-shadow: 0px 1px 5px #5a6e49 inset,0px 1px 0px rgba(255,255,255,0.5);
@@ -62,7 +62,7 @@ body{
     margin-top: 0px;
     width: 1000px;
   /*float:left;*/
-    
+
 }
 
 .win{
@@ -119,38 +119,38 @@ body{
     padding: 0;
 }
 
-pre { 
+pre {
     padding:10px;  margin:0px;
     margin-top: 0px;
     width: 980px;
     position:relative; top:-5px; left:-5px;
     border:1px solid #888;
-    background: #222220; 
+    background: #222220;
     border-radius: 0px 0px 5px 5px;
     min-height: 20px;
     max-height: 300px;
     overflow:auto;
     color:#18bc51;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.3); 
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
 
 .typed-cursor{
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    -webkit-animation: b 0.7s infinite;
+    -moz-animation: b 0.7s infinite;
+    animation: b 0.7s infinite;
 }
-@keyframes blink{
+@keyframes b{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
-@-webkit-keyframes blink{
+@-webkit-keyframes b{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
-@-moz-keyframes blink{
+@-moz-keyframes b{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -158,7 +158,10 @@ pre {
 
 #command {
     color:#18bc51;
-    background-color: #222220; 
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #222220;
+    background-color: #222220;
     width: 35%;
     border: none;
     font-size: 1em;
@@ -167,5 +170,124 @@ pre {
     line-height: 1.9em
 }
 
+
+
+
+/* CSS */
+
+.bash, .window{
+  background-color: #D1D1D1;
+}
+
+#logo-name {
+  font-weight: normal;
+  color: #999999;
+}
+
+.header-logo {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.header-logo div {
+  display: inline-block;
+}
+
+.header-logo-image img {
+  width: 50px;
+}
+
+
+.navbar-default {
+   background: #fff !important; 
+/*	 border-color: transparent !important;*/
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #1DB0ED !important;
+}
+
+#nav-header {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#nav-header ul {
+	margin-top: 10px;
+} 
+
+/*.menu {
+	border-bottom-color: ##999999;
+}*/
+
+/*.link{
+  cursor: pointer;
+  color: #999999 !important;
+}*/
+
+/*.link:hover {
+  color:  #1DB0ED !important;
+}*/
+
+.link {
+	margin-right: 10px !important;
+	border-color: transparent !important;
+	background-color: transparent !important;
+}
+
+.link:hover, .selected {
+  background-color: #1DB0ED !important;
+	color: #ffffff !important;
+}
+
+.welcome {
+  position: relative;
+  height: 620px;
+/*   background: url(../images/the-coder.jpg) no-repeat  rgba(27, 166 , 223, 100);  */
+/*   background-size: cover; */
+/*   background-color: rgba(27, 166 , 223, 100); */
+}
+
+.welcome img{
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  display: block;
+  background: rgba(27, 166 , 223, 0.7);
+  text-allign: center;
+}
+
+/* .overlay img {
+  width: 100px !important;
+  height: 100px !important;
+} */
+
+
+.welcome-logo {
+	text-align: center;
+ /* width: 100px !important;
+  height: 100px !important;*/
+}
+
+.welcome-logo img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+
+.welcome-logo span{
+	margin-top: 20px;
+	font-size: 4em;
+	font-weight: bold;
+}
 
 

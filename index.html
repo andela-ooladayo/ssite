@@ -6,26 +6,90 @@
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="bower_components/typed.js/js/typed.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     </head>
     <body>
-        <button class='show' style="display:none"> show The Terminal </button>
-        <div class='window'>
-            <div class='header'>
-                <a href="#" class='prp close' enabled ></a>
-                <a href="#" class='prp min'></a>
-                <a href="#" class='prp max'></a>  
-                <a href="#" class='maxer'>&#8660;</a>
-                <span>Terminal - Bash - 50x30</span>
+        <header>
+
+            <div class=" bash">
+                <button class='show' style="display:none"> show The Terminal </button>
+                <div class='window'>
+                    <div class='header'>
+                        <a href="#" class='prp close' enabled ></a>
+                        <a href="#" class='prp min'></a>
+                        <a href="#" class='prp max'></a>
+                        <a href="#" class='maxer'>&#8660;</a>
+                        <span>Terminal - Bash - 50x30</span>
+                    </div>
+                    <pre id="Tbd">
+                        Login @ : <span id="date">Date.now()</span> on Codedoctor
+                        Welcome to Shadownet Terminal!
+                        CD.io'App:~/usr $ Oladayo
+                        <div id="Cmd"></div>
+                        <span class="element"></span>
+                        <div class="fore"> CMD</span>:<span class="accent">~</div> : <input id="command" type="text" maxlength="50"></input>
+                        <div class="response"></div>
+                    </pre>
+                </div>
             </div>
-            <pre id="Tbd">
-                Login @ : <span id="date"></span> on Codedoctor
-                Welcome to Shadownet Terminal!
-                CD.io'App:~/usr $ Oladayo
-                <div id="Cmd"></div>
-                <span class="element"></span>
-                <div class="fore"> CMD</span>:<span class="accent">~</div> : <input id="command" type="text" maxlength="50"></input>
-                <div class="response"></div>
-            </pre>
-        </div>
+
+            <div class="welcome">
+                <img src="images/the-coder.jpg"></img>
+                <div class="overlay">
+                    <div class="welcome-logo">
+                        <img src="images/logo4.png"></img><br>
+												<span>Hi, I'm Ssite. I am an Hacker that</span><br>
+												<span>helps you detect security holes in your network</span>
+												
+												<!-- <section class="cd-intro">
+												    	<h4 class="cd-headline letters type">
+															<span>My favourite food is</span>
+															<span class="cd-words-wrapper waiting">
+																<b class="is-visible">pizza</b>
+																<b>sushi</b>
+																<b>steak</b>
+															</span>
+														</h4>
+
+												</section> -->
+												
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-default menu">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed navbar-menu " data-toggle="collapse" data-target="#nav-header">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="header-logo">
+                            <div class="header-logo-image">
+                                <img src="images/logo4.png"></img>
+                        </div>
+                        <div class="header-logo-name">
+                            <h2 id="logo-name">Hack site</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Collect the nav links for toggling -->
+                <div class="collapse navbar-collapse" id="nav-header">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="btn btn-default selected link">HOME</a></li>
+                        <li><a href="#" class="btn btn-default link" >PORTFOLIO</a></li>
+                        <li><a href="#" class="btn btn-default link">BLOG</a></li>
+                        <li><a href="#" class="btn btn-default link">FEATURES</a></li>
+                        <li><a href="#" class="btn btn-default link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+				</header>
+
     </body>
 </html>
