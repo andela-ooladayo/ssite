@@ -200,6 +200,7 @@ pre {
 
 .navbar-default {
    background: #fff !important; 
+/*	 border-color: transparent !important;*/
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -215,9 +216,9 @@ pre {
 	margin-top: 10px;
 } 
 
-.menu {
+/*.menu {
 	border-bottom-color: ##999999;
-}
+}*/
 
 /*.link{
   cursor: pointer;
@@ -288,3 +289,5 @@ pre {
 	font-size: 4em;
 	font-weight: bold;
 }
+
+
