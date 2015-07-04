@@ -110,6 +110,7 @@ function onEnter(commandor) {
                 typeo("." + cla, message, 0, 'command-', run)
             }
             run = run + 1
+            $(commandor).prop('disabled', true);
         }
     });
 }
