@@ -169,3 +169,125 @@ pre {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#logo-name {
+  font-weight: normal;
+  color: #999999;
+}
+
+.header-logo {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.header-logo div {
+  display: inline-block;
+}
+
+.header-logo-image img {
+  width: 50px;
+}
+
+
+.navbar-default {
+   background: #fff !important; 
+/*	 border-color: transparent !important;*/
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #1DB0ED !important;
+}
+
+#nav-header {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#nav-header ul {
+	margin-top: 10px;
+} 
+
+/*.menu {
+	border-bottom-color: ##999999;
+}*/
+
+/*.link{
+  cursor: pointer;
+  color: #999999 !important;
+}*/
+
+/*.link:hover {
+  color:  #1DB0ED !important;
+}*/
+
+.link {
+	margin-right: 10px !important;
+	border-color: transparent !important;
+	background-color: transparent !important;
+}
+
+.link:hover, .selected {
+  background-color: #1DB0ED !important;
+	color: #ffffff !important;
+}
+
+.welcome {
+  position: relative;
+  height: 620px;
+/*   background: url(../images/the-coder.jpg) no-repeat  rgba(27, 166 , 223, 100);  */
+/*   background-size: cover; */
+/*   background-color: rgba(27, 166 , 223, 100); */
+}
+
+.welcome img{
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  display: block;
+  background: rgba(27, 166 , 223, 0.7);
+  text-allign: center;
+}
+
+/* .overlay img {
+  width: 100px !important;
+  height: 100px !important;
+} */
+
+
+.welcome-logo {
+	text-align: center;
+ /* width: 100px !important;
+  height: 100px !important;*/
+}
+
+.welcome-logo img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+
+.welcome-logo span{
+	margin-top: 20px;
+	font-size: 4em;
+	font-weight: bold;
+}

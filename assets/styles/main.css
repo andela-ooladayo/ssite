@@ -220,7 +220,7 @@ footer .social-links a:hover {
     width: 100%}
 .home-hero {
     position: relative;
-    background-image: url(../images/hero-bg.jpg);
+/*    background-image: url(../images/hero-bg.jpg);*/
 }
 .home-hero:before {
     content: "";
@@ -231,7 +231,8 @@ footer .social-links a:hover {
     bottom: 0;
     left: 0;
     pointer-events: none;
-    background-color: #9175bd;
+/*    background-color: #9175bd;*/
+  	background-color: rgba(27, 166 , 223, 0.7);
     opacity: .7;
 }
 .hero-container {
@@ -705,3 +706,84 @@ section#action {
 woot {
     font-weight: bold;
 }
+
+
+
+
+
+/*CSS*/
+
+.menu {
+	border:	none !important;
+	margin: 0 !important;
+}
+
+.navbar-default {
+   background: #fff !important; 
+/*	 border-color: transparent !important;*/
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #1DB0ED !important;
+}
+
+#nav-header {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#nav-header ul {
+	margin-top: 10px;
+} 
+
+#logo-name {
+  font-weight: normal;
+  color: #999999;
+}
+
+.header-logo {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.header-logo div {
+  display: inline-block;
+}
+
+.header-logo-image img {
+  width: 50px;
+}
+
+.link {
+	margin-right: 10px !important;
+	border-color: transparent !important;
+	background-color: transparent !important;
+}
+
+.link:hover, .selected {
+  background-color: #1DB0ED !important;
+	color: #ffffff !important;
+}
+
+.home-hero {
+    position: relative;
+    background-image: url(../images/the-coder.jpg);
+}
+
+
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width:992px) {
+	.link {
+		font-size: 0.9em !important;
+	}
+	
+	#logo-name {
+		font-size: 1.3em !important;
+	}
+}
+
+
+
+
