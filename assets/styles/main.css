@@ -770,6 +770,14 @@ woot {
     background-image: url(../images/the-coder.jpg);
 }
 
+.project-content {
+	margin-left: 20px !important;
+}
+
+hr {
+	margin: 0px !important;
+}
+
 
 
 /*RESPONSIVENESS*/
