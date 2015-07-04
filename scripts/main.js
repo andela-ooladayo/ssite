@@ -77,11 +77,13 @@ function typeo(ele, message, speed, command, run) {
 
 var run = 0;
 var cmd = null;
+var commandList = [];
 
 function onEnter(commandor) {
     $(commandor).on('keypress', function (e) {
         if(e.which == 13) {
             var command = $(commandor).val().toString().toLowerCase();
+            commandList.push(command)
             var cla = "attach-" + run;
             var element = $("<div class=" + cla + ">" + "</div>")
             $(".response").append(element)
@@ -112,5 +114,35 @@ function onEnter(commandor) {
             run = run + 1
             $(commandor).prop('disabled', true);
         }
+
     });
+}
+
+document.onkeydown = showPreviousCommand;
+var i = 0
+var j = 1
+function showPreviousCommand(e) {
+    var r = commandList.length - j
+    var v = r + 1 
+    e = window.event || e;
+
+    if (e.keyCode == '38') {
+        e.preventDefault()
+        if(r < 0) {
+          r = 0
+        }
+        $("#" + e.srcElement.id).val(commandList[r])
+        j = j + 1
+    }
+    if (e.keyCode == '13') {
+        j = 1
+    }
+    else if (e.keyCode == '40') {
+        e.preventDefault()
+        if(v > (commandList.length - 1)) {
+          v = commandList.length - 1
+        }
+        $("#" + e.srcElement.id).val(commandList[v])
+       j  = j - 1
+    }
 }
