@@ -29,12 +29,12 @@ $(document).ready(function() {
     var maxer = 0 ;
     $('.maxer').click( function () { 
         if(maxer%2 === 0) {  
-            $('.window').animate({width:"100%", height:"800px"});
-            $('#Tbd').animate({width:"99%", height:"800px"});
+            $('.window').animate({width:"60%", height:"400px"});
+            $('#Tbd').animate({width:"97.6%", height:"400px"});
         }
         else {
-            $('#Tbd').animate({width:"980px", height:"300px"});
-            $('.window').animate({width:"1000px", height:"300px"});
+            $('#Tbd').animate({width:"98.5%", height:"900px"});
+            $('.window').animate({width:"100%", height:"900px"});
         }
         maxer++;
     });
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 $(function(){
     $(".element").typed({
-        strings: ["Enter your command below....ask codementor --help for help"],
+        strings: ["Enter your command below....ask 'codedoctor --help' for help"],
         typeSpeed: 20,
         showCursor: false,
     });
@@ -67,7 +67,7 @@ function typeo(ele, message, speed, command, run) {
         typeSpeed: 0,
         showCursor: false,
         callback: function() {
-            $(".response").append("<div class='fore' style='margin-left:-10px; margin-top:10px'>CMD</span>:<span class='accent'>~</div>: <input style='color:#18bc51;background-color: #222220; width: 35%; border: none; line-height: 1.9em; font-size: 1em; outline: none;' id=" + "'" + command + run + "'" + "type='text' maxlength='50'></input>")
+            $(".response").append("<div class='fore' style='margin-left:-10px; margin-top:10px'>CMD</span>:<span class='accent'>~</div>: <input style='color:#18bc51;background-color: #222220; width: 35%; border: none; line-height: 1.6em; font-size: .8em; -webkit-box-shadow: none;-moz-box-shadow: none; box-shadow: none;outline: none;' id=" + "'" + command + run + "'" + "type='text' maxlength='50'></input>")
             var commandor = "#" + command + run
             $(commandor).focus();
             onEnter(commandor)
