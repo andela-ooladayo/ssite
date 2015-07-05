@@ -12,11 +12,14 @@
     <!-- <link rel="shortcut icon" type="image/png" href="favicon.png" /> -->
 
     <!-- Styles -->
+
     <link href="assets/styles/normalize.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="assets/styles/skeleton.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/styles/terminal.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/styles/animate.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -27,32 +30,42 @@
   <body>
     <div id="wrapper">
       <!-- Insert Header -->
-      <header>
-			</header>
+      <header></header>
       <!-- Content block, child page inject content -->
       
 <!-- Start Hero Section-->
-						
-<div id="fullscreen-hero" class="home-hero">
-  <div class="hero-container">
-    <div class="hero-content">
-      <a class="home-logo" href="#"><img src="assets/images/logo4.png"></a>
-      <h1 class="cd-headline letters type">
-        <span>Hi, I'm Saurabh.</span><br>
-        <span class="cd-words-wrapper">
-          <b class="is-visible">I'm a Software Developer,</b>
-          <b>I'm a Big Data Analyst</b>
-          <b>I'm a Software Designer</b>
-        </span>
-      </h1>
-      <a class="button button-ghost-white" href="mailto:saurabhhack123@gmail.com">Available For Hire</a>
-      <a class="home-cta" href="#me">
-        Learn more about what I do<br>
-        <i class="fa fa-chevron-down"></i>
-      </a>
+    <div class='window'>
+        <div class='header'>
+            <a href="#" class='prp close' enabled ></a>
+            <a href="#" class='prp min'></a>
+            <a href="#" class='prp max'></a>  
+            <a href="#" class='maxer'>&#8660;</a>
+            <span>Terminal - Bash - 50x30</span>
+        </div>
+        <pre id="Tbd"> Login@ :<span id="date"></span> on Codedoctor <br> Welcome to ShadownetTerminal! <br> Click the red button to close. <br> CD.io'App:~/usr $ Oladayo<br><br> <span class="element"></span><br class='break'><div class="fore"> CMD</span>:<span class="accent">~ :</div> <input id="command" type="text" maxlength="50"></input><br class='break'><div class="response"></div>
+        </pre>
+    </div>			
+    <div id="fullscreen-hero" class="home-hero">
+      <button class='show' style="display:none"> show The Terminal </button>
+      <div class="hero-container">
+        <div class="hero-content">
+          <a class="home-logo" href="#"><img src="assets/images/logo4.png"></a>
+          <h1 class="cd-headline letters type">
+            <span>Hi, I'm Saurabh.</span><br>
+            <span class="cd-words-wrapper">
+              <b class="is-visible">I'm a Software Developer,</b>
+              <b>I'm a Big Data Analyst</b>
+              <b>I'm a Software Designer</b>
+            </span>
+          </h1>
+          <a class="button button-ghost-white" href="mailto:saurabhhack123@gmail.com">Available For Hire</a>
+          <a class="home-cta" href="#me">
+            Learn more about what I do<br>
+            <i class="fa fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 		<div class="sticky-menu">
 			<div class="container">
 					<nav class="navbar navbar-default menu">
@@ -378,6 +391,8 @@ SchoolCom, Fabfresh, Cyber Coders(Germany), Hachi Labs(Los Angeles), Transinfini
     <script src="assets/scripts/jquery-1.11.1.min.js"></script>
     <script src="assets/scripts/jquery-2.1.1.min.js"></script>
     <script src="assets/scripts/custom.min.js"></script>
+    <script type="text/javascript" src="bower_components/typed.js/js/typed.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
     <script src="assets/scripts/wow.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>
