@@ -2,10 +2,10 @@
     max-width: 1140px;
 }
 body {
-    font-size: 1.4rem;
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    color: #93a4aa;
+    font-size: 1.4rem !important;
+    font-family: Montserrat, sans-serif !important;
+    font-weight: 400 !important;
+    color: #93a4aa !important;
 }
 @media screen and (min-width:550px) {
     body {
@@ -23,6 +23,9 @@ body {
 .purple {
     color: #a88cd5;
 }
+.blue{
+	color: #1DB0ED;
+}
 .white {
     color: #fff;
 }
@@ -33,9 +36,9 @@ body {
     margin: 32px auto;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    color: #364347;
+    font-family: Montserrat, sans-serif !important;
+    font-weight: 700 !important;
+    color: #364347 !important;
 }
 p.intro {
     font-size: 2rem;
@@ -189,7 +192,7 @@ footer .social-links a:hover {
     background-color: rgba(0, 0, 0, .3);
 }
 #fullscreen-hero {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -274,17 +277,17 @@ footer .social-links a:hover {
     width: 80px;
 }
 }.hero-content h1 {
-    font-size: 2.6rem;
-    color: #fff;
+    font-size: 2.6rem !important;
+    color: #fff !important;
     margin-bottom: 0;
 }
 @media screen and (min-width:750px) {
     .hero-content h1 {
-    font-size: 3.6rem;
+    font-size: 3.6rem !important;
 }
 }@media screen and (min-width:1000px) {
     .hero-content h1 {
-    font-size: 6rem;
+    font-size: 6rem !important;
 }
 }.cd-words-wrapper {
     display: inline-block;
@@ -658,12 +661,12 @@ section#action {
 }
 .button.button-primary, button.button-primary, input[type=button].button-primary, input[type=reset].button-primary, input[type=submit].button-primary {
     color: #fff;
-    background-color: #a88cd5;
+    background-color: #1DB0ED;
     border: 0;
 }
 .button.button-primary:focus, .button.button-primary:hover, button.button-primary:focus, button.button-primary:hover, input[type=button].button-primary:focus, input[type=button].button-primary:hover, input[type=reset].button-primary:focus, input[type=reset].button-primary:hover, input[type=submit].button-primary:focus, input[type=submit].button-primary:hover {
     color: #fff;
-    background-color: #9175bd;
+    background-color: #1DB0ED;
     border-color: #9175bd;
 }
 .button-ghost-purple {
