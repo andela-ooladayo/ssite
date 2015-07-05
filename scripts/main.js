@@ -88,7 +88,7 @@ function onEnter(commandor) {
             var element = $("<div class=" + cla + ">" + "</div>")
             $(".response").append(element)
             if(command === " codedoctor -h" || command === "codedoctor --help") {
-                message = "Usage: codedoctor [OPTIONS] COMMAND [ARGS]... <br><br> Shadownet command line tool <br> Options: <br>   --help  Show this message and exit. <br> Commands:<br> who              Tells you who is codedoctor <br> schedule         Shows codedoctor schedule <br> hacks            Magics performed by codedoctor <br> academics        Academic qualification of codedoctor<br> clear/clc          Clear Screen";
+                message = " Usage: codedoctor [OPTIONS] COMMAND [ARGS]... <br><br> Shadownet command line tool <br> Options: <br>   --help  Show this message and exit. <br> Commands:<br> who              Tells you who is codedoctor <br> schedule         Shows codedoctor schedule <br> hacks            Magics performed by codedoctor <br> academics        Academic qualification of codedoctor<br> clear/clc        Clear Screen";
                 typeo("." + cla, message, 0, 'command-', run);
             }
             else if(command === "codedoctor -w" || command === "codedoctor who") {
