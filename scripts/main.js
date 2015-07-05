@@ -67,7 +67,7 @@ function typeo(ele, message, speed, command, run) {
         typeSpeed: 0,
         showCursor: false,
         callback: function() {
-            $(".response").append("<div class='fore' style='margin-left:-10px; margin-top:10px'>CMD</span>:<span class='accent'>~</div>: <input style='color:#18bc51;background-color: #222220; width: 35%; border: none; line-height: 1.6em; font-size: .8em; -webkit-box-shadow: none;-moz-box-shadow: none; box-shadow: none;outline: none;' id=" + "'" + command + run + "'" + "type='text' maxlength='50'></input>")
+            $(".response").append("<div class='fore clear' style='margin-top:10px;margin-left:10px;'>CMD</span>:<span class='accent'>~</div>: <input class='clear' style='color:#18bc51;background-color: #222220; width: 35%; border: none; line-height: 1.6em; font-size: .8em; -webkit-box-shadow: none;-moz-box-shadow: none; box-shadow: none;outline: none;' id=" + "'" + command + run + "'" + "type='text' maxlength='50'></input>")
             var commandor = "#" + command + run
             $(commandor).focus();
             onEnter(commandor)
@@ -87,30 +87,41 @@ function onEnter(commandor) {
             var cla = "attach-" + run;
             var element = $("<div class=" + cla + ">" + "</div>")
             $(".response").append(element)
-            if(command === "codedoctor -h" || command === "codedoctor --help") {
-                message = "These are the commands available<br> codedoctor who >>> Tells you who is codedoctor<br> codedoctor schedule >>> Shows codedoctor schedule<br> codedoctor hacks >>> Magics performed by codedoctor<br> codedoctor academics >>> academic qualification of codedoctor\n"
-                typeo("." + cla, message, 0, 'command-', run)
+            if(command === " codedoctor -h" || command === "codedoctor --help") {
+                message = "Usage: codedoctor [OPTIONS] COMMAND [ARGS]... <br><br> Shadownet command line tool <br> Options: <br>   --help  Show this message and exit. <br> Commands:<br> who              Tells you who is codedoctor <br> schedule         Shows codedoctor schedule <br> hacks            Magics performed by codedoctor <br> academics        Academic qualification of codedoctor<br> clear/clc          Clear Screen";
+                typeo("." + cla, message, 0, 'command-', run);
             }
             else if(command === "codedoctor -w" || command === "codedoctor who") {
-                message = "Oladayo is a Software Engineer\n"
-                typeo("." + cla, message, 0, 'command-', run)
+                message = " I'M SAURABH.<br> I am presently engaged in working Full-Time as a Tech-Lead for SchoolCom(Data Analytic's Startup), alongwith my full-time engagement I am also a Technical and Business advisor for Conferensco.<br> Other than this, there are other small roles that I have been in which are - <br>- Mentor at Codementor<br>entor. <br>- Python expert at Hackhands. <br>-Online instructor at Udemy handling Html5 and JavaScript animation. <br>- Advisor for university students from BITS, IIT and other acing colleges in India on programming techniques.<br>- Independent python expert keen to help students and engineers from all over the world.<br>- Rank in top 1200 programmers on Hackerrank in the world.<br>- I would like to bring your attention to the fact that I am also a Hiring Ninja and have taken up Tech interviews (more than a hundred)";
+                typeo("." + cla, message, 0, 'command-', run);
             }
             else if(command === "codedoctor -s" || command === "codedoctor schedule") {
-                message = "My schedule ......................................\n"
+                message = " My schedule ......................................<br>"
                 typeo("." + cla, message, 0, 'command-', run)
             }
-            else if(command === "codedoctor -h" || command === "codedoctor hacks"){
-                message = "unhacked a website for a travel tour company\n"
-                typeo("." + cla, message, 0, 'command-', run)
+            else if(command === "codedoctor -ha" || command === "codedoctor hacks") {
+                message = " **UDACITY** <br> Build a Search Engine <br> Certification of Accomplishment with High Distinction for the online course CS101 by Udacity. The course was taught by David Evans who is a Professor of Computer Science at the University of Virginia and in this course I learn key concepts in computer science and learn how to write own computer programs  in the context of building a web crawler.<br><br>Others Project are <br>**Gotmychange**     Aided in the development of a cross-platform petty cash transaction application prototype, which aimed at solving the 'change' problem involved our everyday routines<br>**KEYWORD BASED SPELL CORRECTOR**     Made a Keyword based Spell Corrector which using N-gram approach hosted as appspot application on advancedspellcheck.appspot.com.";
+                typeo("." + cla, message, 0, 'command-', run);
             }
-            else if(command === "codedoctor -a" || command === "codedoctor academics"){
-                message = "Attended Ladoke Akintola University of Technology...\n"
-                typeo("." + cla, message, 0, 'command-', run)
+            else if(command === "codedoctor -a" || command === "codedoctor academics") {
+                message = " B-Tech in Computer Science(2009-2013). <br>May 2013 I have done my graduation from vellore institute of technology with CGPA of 8.68 in Computer Science.<br>";
+                typeo("." + cla, message, 0, 'command-', run);
+            }
+            else if(command === "clear" || command === "clc") {
+                $(".fore").remove();
+                $("#command").remove();
+                $(".response").remove();
+                $(".break").remove();
+                $("#Tbd").append("<div class='response'></div>")
+                $(".response").append("<div class='fore clear' style='margin-top:10px;margin-left:10px;'>CMD</span>:<span class='accent'>~</div>: <input class='clear' style='color:#18bc51;background-color: #222220; width: 35%; border: none; line-height: 1.6em; font-size: .8em; -webkit-box-shadow: none;-moz-box-shadow: none; box-shadow: none;outline: none;' id='command' type='text' maxlength='50'></input>")
+                $("#command").focus();
+                onEnter("#command")
             }
             else {
-                message = "Unknown command/option " + command.replace("codedoctor", "") + " .Try again" 
-                typeo("." + cla, message, 0, 'command-', run)
+                message = " Unknown command/option " + command.replace("codedoctor", "") + " .Try again";
+                typeo("." + cla, message, 0, 'command-', run);
             }
+
             run = run + 1
             $(commandor).prop('disabled', true);
         }

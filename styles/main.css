@@ -114,8 +114,9 @@ body{
 
 
 .response {
-    margin-left: 200px;
+    /*margin-left: 200px;*/
     padding: 0;
+    word-wrap: break-word
 }
 
 pre { 
@@ -170,6 +171,12 @@ pre {
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+.element{
+    text-align: left;
+    word-wrap: break-word
+}
+
 
 
 
