@@ -13,7 +13,7 @@
 
     <!-- Styles -->
     <link href="assets/styles/normalize.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link href="assets/styles/skeleton.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/styles/main.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/styles/terminal.css" rel="stylesheet" type="text/css" media="all" />
@@ -42,9 +42,10 @@
         </div>
         <pre id="Tbd"> Login@ :<span id="date"></span> on Codedoctor <br> Welcome to ShadownetTerminal! <br> Click the red button to close. <br> CD.io'App:~/usr $ Oladayo<br><br> <span class="element"></span><br class='break'><div class="fore"> CMD</span>:<span class="accent">~ :</div> <input id="command" type="text" maxlength="50"></input><br class='break'><div class="response"></div>
         </pre>
-    </div>			
+    </div>		
+			
     <div id="fullscreen-hero" class="home-hero">
-      <button class='show' style="display:none"> show The Terminal </button>
+      <!-- <button class='show' style="display:none"> show The Terminal </button> -->
       <div class="hero-container">
         <div class="hero-content">
           <a class="home-logo" href="#"><img src="assets/images/logo4.png"></a>
@@ -56,7 +57,7 @@
               <b>I'm a Software Designer</b>
             </span>
           </h1>
-          <a class="button button-ghost-white" href="mailto:saurabhhack123@gmail.com">Available For Hire</a>
+          <a class="button button-ghost-white show" style="display:none" href="#">show The Terminal </a>
           <a class="home-cta" href="#me">
             Learn more about what I do<br>
             <i class="fa fa-chevron-down"></i>
@@ -65,59 +66,35 @@
       </div>
     </div>
 		<div class="sticky-menu">
-			<div class="container">
-					<nav class="navbar navbar-default menu">
-               <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed navbar-menu " data-toggle="collapse" data-target="#nav-header">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="header-logo">
-                            <div class="header-logo-image">
-                                <img src="assets/images/logo4.png"></img>
-                        </div>
-                        <div class="header-logo-name">
-                            <h2 id="logo-name">Hack site</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Collect the nav links for toggling -->
-                <div class="collapse navbar-collapse" id="nav-header">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="btn btn-default selected link">HOME</a></li>
-                        <li><a href="#me" class="btn btn-default link">ABOUT ME</a></li>
-                        <li><a href="#work" class="btn btn-default link" >PORTFOLIO</a></li>
-                        <li><a href="#" class="btn btn-default link">BLOG</a></li>
-												
-												<!-- <ul class="nav nav-pills">
-												<li class="dropdown">
-												  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
-												  <ul class="dropdown-menu" id="menu1">
-												    <li>
-												        <a href="#">2-level Menu <i class="icon-arrow-right"></i></a>
-												        <ul class="dropdown-menu sub-menu">
-												            <li><a href="#">Action</a></li>
-												            <li><a href="#">Another action</a></li>
-												            <li><a href="#">Something else here</a></li>
-																</ul>
-														</li>
-													</ul>
-												</li>
-											</ul> -->
-												
-												
-												
-                        <li><a href="#action" class="btn btn-default link">CONTACT</a></li>
-                    </ul>
-                </div>
-         		 </nav>	
-				</div>
-				<hr>
-			</div>
+			<div class="container head">	 
+        <div class="header-logo">
+          <div class="header-logo-image">
+            <img src="assets/images/logo4.png"></img>
+          </div>
+          <div class="header-logo-name">
+            <h4 id="logo-name">Hack site</h4>
+          </div>
+        </div>
+         <div class= "menu-button">
+            <ul>
+              <li><a href="#" class="selected link">Home</a></li>
+              <li><a href="#me" class="link">About</a></li>
+              <li><a href="#work" class="link">Portfolio</a></li>
+              <li>
+                <a href="#" class="link">Blog &#9662;</a>
+                <ul class="dropdown">
+                  <li><a href="#" class="link">Hackers</a></li>
+                  <li><a href="#" class="link">Personal</a></li>
+                  <li><a href="#" class="link">Music</a></li>
+                  <li><a href="#" class="link">Motivational</a></li>
+                </ul>
+              </li>
+              <li><a href="#action" class="link">Contact</a></li>
+            </ul>
+         </div>
+		  </div>
+		  <hr>
+		</div>
 
 <!-- Start Experience Section-->
 <section id="me">
@@ -155,7 +132,7 @@
         <div class="expertise-block">
           <i class="fa fa-code-fork blue"></i>
           <h4 class="title black">EMPLOYMENT</h4>
-					<h5 class="title">TECH LEAD at SchoolCom<br> July'2013 to Till Date</h5>
+					<h5 class="title sub-title">TECH LEAD at SchoolCom<br> July'2013 to Till Date</h5>
           <p class="summary left">
 	          <i class="fa fa-circle purple small"></i>
 						Driving a solution set across development teams through market requirements, product contract, and positioning.<br>
@@ -180,12 +157,12 @@
         <div class="expertise-block">
           <i class="fa fa-mortar-board blue"></i>
           <h4 class="title black">EDUCATION</h4>
-						<h5 class="title">VELLORE INSTITUTE OF UNIVERSITY<br>
+						<h5 class="title sub-title">VELLORE INSTITUTE OF UNIVERSITY<br>
 						Vellore. &emsp;2009-May,2013</h5>
           <p class="summary left">
 						B-Tech in Computer Science with CGPA of 8.68.<br>
 					</p>
-						<h5 class="title">VIT University &emsp;Jan'2011-Dec'2012</h5>
+						<h5 class="title sub-title">VIT University &emsp;Jan'2011-Dec'2012</h5>
 						<p class="summary left">
 	          <i class="fa fa-circle purple small"></i>
 						Successfully completed all CCNA (Cisco Certified Network Associate) modules under Cisco Network Academy in VIT University.
@@ -199,9 +176,7 @@
 SchoolCom, Fabfresh, Cyber Coders(Germany), Hachi Labs(Los Angeles), Transinfinity, Mart Mobi, Aurelenic, Conferensco(Chennai & San Fransisco) and Pixo.
       </div>
     </div>
-			
-			
-			
+
     </div>
   </div>
 </section>
@@ -313,7 +288,7 @@ SchoolCom, Fabfresh, Cyber Coders(Germany), Hachi Labs(Los Angeles), Transinfini
       <div class="one-third column">
         <div class="expertise-block">
           <img src="assets/images/postcard1.jpg">
-					<h5 class="title">HACKERRANK</h5>
+					<h5 class="title sub-title">HACKERRANK</h5>
           <p class="description">
             Currently Holding rank in top 1200 programmer's in the world. Got 1st Rank in EverNote Programming Challenge'2012 conducted by interviewstreet.com.
           </p>
@@ -323,7 +298,7 @@ SchoolCom, Fabfresh, Cyber Coders(Germany), Hachi Labs(Los Angeles), Transinfini
       <div class="one-third column">
         <div class="expertise-block">
           <img src="assets/images/postcard2.jpg">
-					<h5 class="title">HINDUSTAN PRATIBHA SAMMAAN AWARD</h5>
+					<h5 class="title sub-title">HINDUSTAN PRATIBHA SAMMAAN AWARD</h5>
           <p class="description">
 					 Hindustan Pratibha Sammaan award by Hindustan Newspaper.
 					 Got Hindustan Pratibha Sammaan award by Hindustan Newspaper for getting rank in top 3 in 12th Standard.
@@ -334,7 +309,7 @@ SchoolCom, Fabfresh, Cyber Coders(Germany), Hachi Labs(Los Angeles), Transinfini
       <div class="one-third column">
         <div class="expertise-block">
           <img src="assets/images/postcard3.jpg">
-					<h5 class="title">FACEBOOK HACKERCUP'2013</h5>
+					<h5 class="title sub-title">FACEBOOK HACKERCUP'2013</h5>
           <p class="description">
             <!-- Cleared the Facebook Hackercup'2013 Qualification Round. -->
 						It provide a social coding platform for people who want to share their code . It use's extensive javascipt for language highlighter and also it use google datastore to store Tweet's.
@@ -392,7 +367,7 @@ SchoolCom, Fabfresh, Cyber Coders(Germany), Hachi Labs(Los Angeles), Transinfini
     <script type="text/javascript" src="bower_components/typed.js/js/typed.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script src="assets/scripts/wow.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script>
       new WOW().init();
     </script>
