@@ -192,7 +192,7 @@ footer .social-links a:hover {
     background-color: rgba(0, 0, 0, .3);
 }
 #fullscreen-hero {
-    height: 90vh;
+    height: 92vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -673,6 +673,17 @@ section#action {
     color: #9175bd;
     border: 3px solid #9175bd;
     padding: .9rem 2.9rem;
+}
+.button-ghost-blue {
+    color: #1DB0ED;
+    border: 3px solid #1DB0ED;
+    padding: .9rem 2.9rem;
+}
+.button-ghost-blue:hover {
+    color: #fff;
+    border-color: #1DB0ED;
+    background-color: #1DB0ED;
+    padding: .9rem 3.7rem;
 }
 .button-ghost-purple:hover {
     color: #fff;
